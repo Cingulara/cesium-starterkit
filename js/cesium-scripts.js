@@ -63,7 +63,7 @@ var currentLongitude = 0.0;
             tiled: true,
             enablePickFeatures: true
         }, 
-        layers : 'florida:florida-group',  // comma separated listing
+        layers : 'florida:FL_planet_osm_roads',  // comma separated listing
         maximumLevel : 20
     });    
     viewer.imageryLayers.addImageryProvider(detailedMaps);
