@@ -15,7 +15,7 @@ function openNav() {
 //////////////////////////////////////////////////////////////////////////
 // Creating the CesiumJS world viewer
 //////////////////////////////////////////////////////////////////////////
-Cesium.Ion.defaultAccessToken = '';
+//Cesium.Ion.defaultAccessToken = '';
 var viewer = new Cesium.Viewer('cesiumContainer', {
     //selectionIndicator: false,
     sceneModePicker: false,
@@ -28,9 +28,6 @@ var handlerMouse; // used to turn on/off mouse handler movements
 // track the mouse to drop entities/POIs/etc. by keyboard
 var currentLatitude = 0.0;
 var currentLongitude = 0.0;
-
-// setup the Geographic Functions from the geo.js file
-var geoFunctions = new GeoFunctions();
 
 (function () {
     "use strict";
@@ -90,8 +87,8 @@ var geoFunctions = new GeoFunctions();
     //viewer.scene.globe.enableLighting = true;
 
     // Create an initial camera view
-    var initialPosition = new Cesium.Cartesian3.fromDegrees(-87.0457, 30.6844, 18000.0);
-    var initialOrientation = new Cesium.HeadingPitchRoll.fromDegrees(7.1077496389876024807, -75.0, 0.03);
+    var initialPosition = new Cesium.Cartesian3.fromDegrees(-82.3597, 27.8795, 18000.0);
+    var initialOrientation = new Cesium.HeadingPitchRoll.fromDegrees(0.0, -75.0, 0.0);
     var homeCameraView = {
         destination : initialPosition,
         orientation : {
