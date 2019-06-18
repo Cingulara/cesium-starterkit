@@ -5,10 +5,13 @@ GeoServer local maps, as well as interact with the CesiumJS large API to do thin
 map to make it more interactive.  This is very bare bones basic and a start to get people to 
 see the power of CesiumJS and what you can use on top of it to build GIS applications. 
 
-There is a blog post [here](https://medium.com/@dale.bingham_30375/setup-geoserver-for-a-local-gis-application-like-cesiumjs-14322f1178d5) that goes over setting up GeoServer locally (or somewhere you choose) and how to load maps 
-in it. This repo is the 2nd step: using those maps to build an application using a simple menu structure as a starting point. 
+There is a blog post [here](https://medium.com/@dale.bingham_30375/setup-geoserver-for-a-local-gis-application-like-cesiumjs-14322f1178d5) that goes over 
+setting up GeoServer locally (or somewhere you choose) and how to load maps 
+in it. This repo is the 2nd step: using those maps to build an application using a simple 
+menu structure as a starting point. That 2nd blog post is [here](https://medium.com/@dale.bingham_30375/a-cesiumjs-starter-kit-with-geoserver-a96bfe767ba2).
 
-This is NOT production ready. It does not use JS classes or try/catch and good error trapping. 
+FYI this is NOT production ready. It does not use JS classes or try/catch and good error trapping. 
+It also needs to have input validation on the form for the drawing options to only allow alphanumeric. 
 It is to help you get ideas out there, prototype, and get used to the CesiumJS API. And it is to 
 help me have a starting point next time I am asked to do a GIS-based application. Which seems 
 to be more and more!
@@ -38,3 +41,4 @@ look-and-feel as well as functionality on top of CesiumJS.
 * CesiumJS Sandbox - https://cesiumjs.org/Cesium/Build/Apps/Sandcastle/ 
 * GeoServer GIS - http://geoserver.org/
 * JSColor plugin - http://jscolor.com/
+* Enable GeoServer CORS - https://docs.geoserver.org/latest/en/user/production/container.html
